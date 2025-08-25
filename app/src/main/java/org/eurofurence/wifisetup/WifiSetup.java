@@ -286,19 +286,19 @@ public class WifiSetup extends Activity {
 		} else {
 			ssid = "MCH2022-legacy";
 		}*/
-		ssid = "38C3";
-        subject_match = "/CN=radius.c3noc.net";
-        altsubject_match = "DNS:radius.c3noc.net";
+		ssid = "Eurofurence";
+        subject_match = "/CN=radius.eurofurence.org";
+        altsubject_match = "DNS:radius.eurofurence.org";
 
 		realm = "";
 		switch (selected_profile) {
 			case PROFILE_UNFILTERED:
-				s_username = "allowany";
-				s_password = "allowany";
+				s_username = "public";
+				s_password = "public";
 				break;
 			case PROFILE_SITEONLY:
-				s_username = "38c3";
-				s_password = "38c3";
+				s_username = "eurofurence";
+				s_password = "eurofurence";
 				break;
 			case PROFILE_PROTECTME:
 				s_username = "outboundonly";
