@@ -13,7 +13,7 @@
  *  limitations under the License.
  */
 
-package nl.eventinfra.wifisetup;
+package org.eurofurence.wifisetup;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

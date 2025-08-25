@@ -4,7 +4,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "nl.eventinfra.wifisetup"
+        applicationId "org.eurofurence.wifisetup"
         minSdkVersion 18
         targetSdkVersion 33
     }
