@@ -143,8 +143,8 @@ public class WifiSetup extends Activity {
                 logindata.setVisibility(View.INVISIBLE);
                 switch ((int) id) {
                     case 0:
-                        selected_profile = Profile.PROFILE_SITEONLY;
-                        toastText("You trust people on-site more than the internet! Thank you!");
+                        selected_profile = Profile.PROFILE_PROTECTME;
+                        toastText("You don't trust anyone? Or maybe not your device?");
                         break;
                     case 1:
                         selected_profile = Profile.PROFILE_UNFILTERED;
@@ -152,16 +152,14 @@ public class WifiSetup extends Activity {
                         break;
 
                     case 2:
-                        selected_profile = Profile.PROFILE_PROTECTME;
-                        toastText("You don't trust anyone? Or maybe not your device?");
+                        selected_profile = Profile.PROFILE_SITEONLY;
+                        toastText("You trust people on-site more than the internet! Thank you!");
                         break;
                     case 3:
                         selected_profile = Profile.PROFILE_SPECIAL;
                         logindata.setVisibility(View.VISIBLE);
                         toastText("Hi fellow special person!");
                         break;
-
-
                 }
             }
 
@@ -228,12 +226,12 @@ public class WifiSetup extends Activity {
                 s_password = "public";
                 break;
             case PROFILE_SITEONLY:
-                s_username = "eurofurence";
-                s_password = "eurofurence";
+                s_username = "event";
+                s_password = "event";
                 break;
             case PROFILE_PROTECTME:
-                s_username = "outboundonly";
-                s_password = "outboundonly";
+                s_username = "eurofurence";
+                s_password = "eurofurence";
                 break;
             case PROFILE_SPECIAL:
                 s_username = username.getText().toString();
