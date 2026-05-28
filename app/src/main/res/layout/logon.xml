@@ -11,8 +11,7 @@
 	<ScrollView
 		android:id="@+id/FirstView"
 		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_marginTop="?attr/actionBarSize">
+		android:layout_height="fill_parent">
 
 		<LinearLayout
 			android:id="@+id/logonLayout"
